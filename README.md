@@ -1,3 +1,50 @@
+# React Basic
+
+An overview and walkthrough
+https://www.taniarascia.com/getting-started-with-react/
+
+--------------------------------------------------------------
+
+# Deploy via npm and build to github pages
+
+Make sure you've exited out of your local React environment, so the code isn't currently running. First, we're going to add a homepage field to package.json, that has the URL we want our app to live on.
+
+package.json
+
+```
+"homepage": "https://taniarascia.github.io/react-tutorial",
+```
+
+We'll also add these two lines to the scripts property.
+
+```
+"scripts": {
+  // ...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
+
+In your project, you'll add gh-pages to the devDependencies.
+
+```
+npm install --save-dev gh-pages
+```
+
+We'll create the build, which will have all the compiled, static files.
+
+```
+npm run build
+```
+
+Finally, we'll deploy to gh-pages.
+
+```
+npm run deploy
+```
+
+-----------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
