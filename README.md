@@ -43,6 +43,14 @@ Finally, we'll deploy to gh-pages.
 npm run deploy
 ```
 
+## Github pages https://pages.github.com/
+
+Set up repository and push up code. Go to settings -> Scroll down to GitHub Pages section and activate the page by choosing the main branch for your project and save. 
+
+https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+
+
 -----------------------------------------------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
